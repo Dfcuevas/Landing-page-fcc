@@ -1,28 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./estilos.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./estilos.css" />
     <title>Proyecto 3 FCC</title>
-</head>
-<body>
+  </head>
+  <body>
     <header id="header">
-        <div class="header-container">
-            <div class="logo-header">
-                <img src="./original_trombones.png" alt="logo de la landing page de unos trombones">
-            </div>
-            <nav class="nav-header" id="nav-bar">
-                <ul>
-                    <li><a href="" class="nav-link">Features</a></li>
-                    <li><a href="" class="nav-link">How it works</a></li>
-                    <li><a href="" class="nav-link">Pricing</a></li>
-                </ul>
-            </nav>
+      <div class="header-container">
+        <div class="logo-header">
+          <img id="header-img"
+            src="./original_trombones.png"
+            alt="logo de la landing page de unos trombones"
+          />
         </div>
+        <nav class="nav-header" id="nav-bar">
+          <ul>
+            <li><a href="#features" class="nav-link">Features</a></li>
+            <li><a href="#video-container" class="nav-link">How it works</a></li>
+            <li><a href="#prices-cards" class="nav-link">Pricing</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
+    
+    <section>
+      <h1>Handcrafted, home-made masterpieces</h1>
+      <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <input
+        name="email"
+          type="email"
+          id="email"
+          required
+          placeholder="Enter your email address"
+        />
+        <input type="submit" id="submit" value="GET STARTED"/>
+      </form>
+    </section>
 
+    <main class="container">
+      <section class="features" id="features">
+        <div class="grid-section">
+          <div class="grid-icon">
+            <i><img src="./fuego.png" alt="" /></i>
+          </div>
+          <div class="grid-content">
+            <h2>Premium Materials</h2>
+            <p>
+              Our trombones use the shiniest brass which is sourced locally.
+              This will increase the longevity of your purchase.
+            </p>
+          </div>
+        </div>
+        <div class="grid-section">
+          <div class="grid-icon">
+            <i><img src="./caravana.png" alt="" /></i>
+          </div>
+          <div class="grid-content">
+            <h2>Fast Shipping</h2>
+            <p>
+              We make sure you recieve your trombone as soon as we have finished
+              making it. We also provide free returns if you are not satisfied.
+            </p>
+          </div>
+        </div>
+        <div class="grid-section">
+          <div class="grid-icon">
+            <i><img src="./fuego.png" alt="" /></i>
+          </div>
+          <div class="grid-content">
+            <h2>Quality Assurance</h2>
+            <p>
+              For every purchase you make, we will ensure there are no damages
+              or faults and we will check and test the pitch of your instrument.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="video-container" id="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
 
+      </section>
+
+      <section class="prices-cards" id="prices-cards">
+          <div class="product">
+              <div class="title-card">TENOR TROMBONE</div>
+              <h2>$600</h2>
+              <ul>
+                  <li>Caracteristica 1</li>
+                  <li>Caracteristica 2</li>
+                  <li>Caracteristica 3</li>
+                  <li>Caracteristica 4</li>
+              </ul>
+              <button>Select</button>
+          </div>
+          <div class="product">
+            <div class="title-card">BASS TROMBONE</div>
+            <h2>$900</h2>
+            <ul>
+                <li>Caracteristica 1</li>
+                <li>Caracteristica 2</li>
+                <li>Caracteristica 3</li>
+                <li>Caracteristica 4</li>
+            </ul>
+            <button>Select</button>
+        </div>
+        <div class="product">
+            <div class="title-card">VALVE TROMBONE</div>
+            <h2>$1200</h2>
+            <ul>
+                <li>Caracteristica 1</li>
+                <li>Caracteristica 2</li>
+                <li>Caracteristica 3</li>
+                <li>Caracteristica 4</li>
+            </ul>
+            <button>Select</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+        <div class="nav-footer">
+            <ul>
+                <li><a href="">Privacy</a></li>
+                <li><a href="">Terms</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            Copyright 2016, Original Trombones
+        </div>
+    </footer>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-</body>
+  </body>
 </html>
